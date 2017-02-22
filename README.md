@@ -1,2 +1,2 @@
 # relogatech.com
-corporate website
+Created by : Rexie Galban

@@ -1,0 +1,13 @@
+RewriteEngine On
+##RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+##RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^198\.23\.57\.17
+RewriteRule (.*) http://www.relogatech.com/$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L] 
+</IfModule>
